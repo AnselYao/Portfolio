@@ -10,19 +10,19 @@ This is __an lottery project for Sports Department of SEUSU__. At the very begin
 
 *Ansel Yao*
 
-## Developer
+### Developer
 
 *Ansel Yao*
 
-## Duration
+### Duration
 
 *3 days*
 
-## Techniques
+### Techniques
 
 *html, css, JavaScript, Photoshop*
 
-## Shortcoming
+### Shortcoming
 
 *For the whole project is limited within a short time, I can hardly learn all front-end techniques.* 
 
