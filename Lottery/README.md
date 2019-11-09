@@ -1,6 +1,6 @@
 ## Ansel's first front-end project!
 
-<div align=center><img src="https://github.com/AnselYao/Portfolio/blob/master/Lottery/images/preview.jpg" /></div>
+<div align=center><img src="https://github.com/AnselYao/Portfolio/blob/master/Lottery/images/web.jpg" /></div>
 
 ### Introduction
 
