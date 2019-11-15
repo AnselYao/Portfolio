@@ -1,0 +1,47 @@
+<!DOCTYPE html>  
+<html>
+<head>  
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />  
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />  
+    <title>Hello, World</title>  
+    <style type="text/css">  
+        html{height:100%}  
+        body{height:100%;margin:0px;padding:0px}  
+        #container{height:100%}  
+    </style>  
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=3.0&ak=6jUA5PKDKmyb1D0ipI1iC1onLYPlRB7I">
+        //v3.0版本的引用方式：src="http://api.map.baidu.com/api?v=3.0&ak=您的密钥"
+    </script>
+</head>  
+ 
+<body>  
+    <div id="container"></div> 
+    <script type="text/javascript"> 
+
+        var map = new BMap.Map("container"); 
+        map.centerAndZoom(new BMap.Point(116.404, 39.915), 14); 
+        var transit = new BMap.TransitRoute(map, { 
+            renderOptions: {map: map, panel: "results"} 
+        }); 
+
+        var start = new BMap.Point(116.310791, 40.003419);
+        var end = new BMap.Point(121.490546, 31.233585);
+        transit.search(start, end);
+        alert(1);
+        var res = new BMap.TransitRouteResult();
+        res = transit.getResults(); // 公交
+        
+        alert(1);
+        window.alert(res.getDistance(),res.getDuration()); // 返回里程、时间
+        var ajax = new XMLHttpRequest();
+ajax.open("POST","url",true);
+ajax.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+ajax.send("name=zhangsan&age=18");
+ajax.onreadystatechange = function(){
+if(ajax.readyState == 4 && ajax.status == 200){
+     var json = JSON.parse(ajax.responseText);
+    fn(json);
+}
+    </script>  
+</body>  
+</html>
