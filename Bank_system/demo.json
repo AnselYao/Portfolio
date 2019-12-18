@@ -1,0 +1,43 @@
+{
+    "snapId": "0",
+    "localId": 4,
+    "snapContent":
+    {
+        "local":
+        {
+            "A":12,
+            "B":23,
+            "C":23
+        },
+        "channelMsg":
+        [
+            {
+                "fromNode": 1,
+                "content": 
+                {
+                    "A": 12,
+                    "B": 23,
+                    "C": 43
+                }
+            },
+            {
+                "fromNode": 2,
+                "content": 
+                {
+                    "A": 12,
+                    "B": 23,
+                    "C": 43
+                }
+            },
+            {
+                "fromNode": 3,
+                "content": 
+                {
+                    "A": 12,
+                    "B": 23,
+                    "C": 43
+                }
+            }
+        ]
+    }
+}
